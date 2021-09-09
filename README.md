@@ -1,8 +1,14 @@
-# Instrukcja budowania i uruchamiania REST API
-Projekt został wykonany w języku Python z użyciem frameworku Flask. Aplikacja zawiera 6 endpointów i funkcji umożliwiających komunikację z serwerem. Podczas tworzenia projektu wykorzystano 3 metody, odpowiednio: GET, POST, DELETE. Testowanie endpointów odbywa się poprzez REST Client z wykorzystaniem protokołu HTTP.
-1.	Pierwszy endpoint wraz z funkcją get_words() umożliwia wyświetlanie wszystkich słów z kolekcji. Wykorzystuje metodę GET.
-2.	Kolejno funkcja get_word() umożliwia wyświetlenie słowa o podanym indexie i również zastosowano metodę GET.
-3.	Następny endpoint wraz z funkcją create_word() pozwala na dodawanie nowych słów do kolekcji i wykorzystuje metodę POST.
-4.	Wykorzystano także metodę DELETE i funkcję delete_word() w celu usunięcia wybranego słowa o danym indexie.
-5.	Aplikacja umożliwia również sprawdzenie liczby wystąpień danego słowa w kolekcji. W tym celu wykorzystano funkcję get_amount() i metodę GET.
-6.	Ostatni endpoint wraz z funkcją get_unique_words() umożliwia wyświetlenie wszystkich unikalnych słów z kolekcji. W tym przypadku również wykorzystano metodę GET.
+# Simple REST API
+This project allows adding, removing and displaying all or unique words from collection. It also gives possibility to check number of occurrences of given word in collection. The project contains 6 endpoints and functions to communicate with the server. During the development of the project, 3 methods were used, respectively: GET, POST, DELETE. Testing of the endpoints is done via REST Client using HTTP protocol.
+
+## Endpoints
+1. The first endpoint with get_words() function allows to display all the words in the collection. It uses the GET method.
+2. Next endpoint with get_word() function enables to display the word with given index and also GET method has been used.
+3. Endpoint with create_word() function allows adding new words to the collection. It uses POST method.
+4. DELETE method and delete_word() function was used to delete the selected word with given index.
+5. The application also allows to check the number of occurrences of a given word in the collection. The get_amount() function and the GET method were used for this purpose.
+6. Last endpoint with get_unique_words() function allows to display all unique words from the collection. In this case also GET method was used.
+
+## Used Technologies 
+- Language: Python
+- Libraries: flask, numpy
